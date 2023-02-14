@@ -7,7 +7,7 @@ jobs:
   build:
     runs-on: self-hosted
     container:
-      image: debian:sid
+      image: debian:latest
       volumes:
         - /proc:/proc
       options: --privileged -it
