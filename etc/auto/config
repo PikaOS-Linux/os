@@ -31,12 +31,12 @@ lb config noauto \
     --parent-mirror-binary "http://archive.ubuntu.com/ubuntu/" \
     --keyring-packages "ubuntu-keyring pika-sources" \
     --apt-options "--yes --option Acquire::Retries=5 --option Acquire::http::Timeout=100 --option Dpkg::Options::="--force-confdef" " \
-    --chroot-filesystem jffs2 \
+    --chroot-filesystem squashfs \
+    --chroot-squashfs-compression-type zstd \
     --apt-recommends false \
     --cache-packages false \
     --uefi-secure-boot disable \
     --binary-images iso-hybrid \
-    --binary-filesystem ext4 \
     --iso-application "$NAME" \
     --iso-volume "$NAME" \
     --firmware-binary false \
