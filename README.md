@@ -1,37 +1,41 @@
-# Pop!\_OS ISO production
+## This ISO Builder
 
-This repository contains the tools necessary for building Pop!\_OS ISOs.
+This ISO builder was basically a combination of previous efforts from Ubuntu
+Budgie (budgie-remix at the time), some stuff from livecd-rootfs from launchpad, 
+Elementary OS, and most importantly VanillaOS thanks to the amazing devs from all around!
+Vanilla-OS Link: https://github.com/Vanilla-OS/os
 
-## Requirements
+## Why not just fork from livecd-rootfs?
 
-First you need to import the Pop!\_OS ISO signing key:
+We do not posses enough IQ to do that! 
 
-```sh
-gpg --recv-keys 204DD8AEC33A7AFF
-```
+## Building Locally
 
-Then you need to generate your own GPG key and upload it to a keyserver:
+As UCR is built with the Debian version of `live-build`, not the Ubuntu patched version, it's easiest to build an iso in a Debian VM or container. This prevents messing up your host system too.
 
-```sh
-gpg --full-gen-key
-gpg --send-keys --keyserver keyserver.ubuntu.com ${YOUR_KEY_ID_HERE}
-```
+The following example uses Docker and assumes you have Docker correctly installed and set up:
 
-While you are waiting for your key to be uploaded, install the dependencies:
+ 1) Clone this project & `cd` into it:
 
-```sh
-./deps.sh
-```
+    ```
+    git clone https://github.com/PikaOS-Linux/os.git && cd os
+    ```
 
-## Building
+ 2) Configure the channel in the `etc/terraform.conf` (unstable, all).
 
-The build is controlled by the Makefile. The following commands can be used:
-- `make` - Build an ISO at `build/17.10/pop-os.iso`
-- `make qemu_bios` - Run the ISO in BIOS mode
-- `make qemu_uefi` - Run the ISO in UEFI mode
-- `make clean` - Remove the build files, keeping the debootstrap
-- `make distclean` - Remove the debootstrap and other build files
+ 3) Run the build:
 
-The configuration can be changed in `mk/config.mk`.
+    ```
+    docker run --privileged -i -v /proc:/proc \
+        -v ${PWD}:/working_dir \
+        -w /working_dir \
+        debian:latest \
+        /bin/bash -s etc/terraform.conf < build.sh
+    ```
 
-To rebuild the ISO when you have made changes, you can use `make clean && make`
+ 4) When done, your image will be in the `builds` folder.
+
+## Release tags
+
+Released usually follows the Ubuntu release cycle i.e. `22.10, 23.04..`. Releases named `22.10-r1` means that the release is still 22.10 with just a refreshed of the repositories and packages, this is meant to help users getting the latest release with updated packages, with more fixes and features OTB.
+

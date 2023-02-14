@@ -1,0 +1,18 @@
+#!/bin/sh
+# Description: Set PikaOS name and info
+
+# Prepare
+distro_pretty_name="@DISTRO_NAME @VERSION @CHANNEL"
+
+# Set OS name
+echo "$distro_pretty_name /\n /\l" > /etc/issue
+
+# Set OS info
+echo 'PRETTY_NAME="'$distro_pretty_name'"
+NAME="@DISTRO_NAME"
+VERSION_ID="@VERSION"
+VERSION="@VERSION @CHANNEL"
+VERSION_CODENAME="@CODENAME"
+ID=ubuntu
+ID_LIKE=debian
+UBUNTU_CODENAME="@BASECODENAME"' > /etc/os-release

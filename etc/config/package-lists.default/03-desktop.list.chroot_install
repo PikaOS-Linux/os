@@ -1,0 +1,6 @@
+pika-baseos
+pika-amdgpu-core
+pika-amdgpu-switcher
+pika-gnome-desktop-minimal
+dbus-x11
+rsync

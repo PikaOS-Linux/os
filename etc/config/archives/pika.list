@@ -1,0 +1,18 @@
+deb http://archive.ubuntu.com/ubuntu kinetic main restricted universe multiverse
+deb http://archive.ubuntu.com/ubuntu kinetic-security main restricted universe multiverse
+deb http://archive.ubuntu.com/ubuntu kinetic-updates main restricted universe multiverse
+deb http://archive.ubuntu.com/ubuntu kinetic-backports main restricted universe multiverse
+deb http://archive.ubuntu.com/ubuntu kinetic-proposed main restricted universe multiverse
+deb [signed-by=/usr/share/keyrings/pika-keyring.gpg.key] https://ppa.launchpadcontent.net/pikaos/baseos/ubuntu kinetic main
+deb [signed-by=/usr/share/keyrings/rocm-keyring.gpg.key] https://repo.radeon.com/amdgpu/5.4.1/ubuntu jammy main proprietary 
+deb [signed-by=/usr/share/keyrings/amdvlk.gpg.key] https://repo.radeon.com/amdvlk/apt/debian bionic main
+deb [signed-by=/usr/share/keyrings/kisak-mesa.gpg.key] http://ppa.launchpad.net/kisak/kisak-mesa/ubuntu kinetic main
+deb [signed-by=/usr/share/keyrings/kubuntu-ppa.gpg.key] https://ppa.launchpadcontent.net/kubuntu-ppa/backports/ubuntu kinetic main
+deb [signed-by=/usr/share/keyrings/mozillateam-ubuntu-ppa.gpg.key] https://ppa.launchpadcontent.net/mozillateam/ppa/ubuntu kinetic main
+deb [signed-by=/usr/share/keyrings/pika-keyring.gpg.key] https://ppa.launchpadcontent.net/pikaos/multimedia/ubuntu kinetic main
+deb [signed-by=/usr/share/keyrings/rocm-keyring.gpg.key] https://repo.radeon.com/rocm/apt/5.4.3 jammy main
+deb [signed-by=/usr/share/keyrings/steam_pika.gpg.key] http://repo.steampowered.com/steam stable steam
+deb [signed-by=/usr/share/keyrings/winehq-archive.key] https://dl.winehq.org/wine-builds/ubuntu kinetic main
+deb [signed-by=/usr/share/keyrings/xtradeb-ubuntu-apps.gpg.key] https://ppa.launchpadcontent.net/xtradeb/apps/ubuntu kinetic main
+deb [signed-by=/usr/share/keyrings/xtradeb-ubuntu-play.gpg.key] https://ppa.launchpadcontent.net/xtradeb/play/ubuntu kinetic main
+deb [signed-by=/usr/share/keyrings/xtradeb.asc.key] https://packages.xtradeb.net/ubuntu kinetic apps play
