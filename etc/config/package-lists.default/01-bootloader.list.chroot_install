@@ -1,3 +1,7 @@
 update-systemd-boot
 systemd-boot
 systemd
+intel-microcode
+amd64-microcode
+iucode-tool
+setserial
