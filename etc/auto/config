@@ -4,11 +4,13 @@ set -e
 
 . ./terraform.conf
 
-if [ "$HWE_KERNEL" = "yes" ]; then
-    KERNEL_FLAVORS="generic-hwe-${BASEVERSION}"
-else
-    KERNEL_FLAVORS="generic"
-fi
+#if [ "$HWE_KERNEL" = "yes" ]; then
+#    KERNEL_FLAVORS="generic-hwe-${BASEVERSION}"
+#else
+#    KERNEL_FLAVORS="generic"
+#fi
+
+KERNEL_FLAVORS="cosmo-amd64"
 
 lb config noauto \
     --architectures "$ARCH" \
