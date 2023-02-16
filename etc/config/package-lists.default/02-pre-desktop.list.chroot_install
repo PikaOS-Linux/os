@@ -2,3 +2,5 @@ zram-config
 plymouth-theme-spinner
 wireguard-modules
 kernel-pika
+libdrm-amdgpu-common
+libdrm2-amdgpu
