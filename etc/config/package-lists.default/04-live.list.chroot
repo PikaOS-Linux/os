@@ -5,8 +5,6 @@ cifs-utils
 xfsprogs
 jfsutils
 reiserfsprogs
-shim-signed
-shim
 lvm2
 dmraid
 wamerican
@@ -14,6 +12,5 @@ fwupdate
 mokutil
 zram-config
 rsync
-distinst
 casper
 calamares-settings-pika
