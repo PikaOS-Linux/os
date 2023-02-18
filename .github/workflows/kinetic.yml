@@ -1,6 +1,6 @@
 
 
-name: PikaOS kinetic
+name: PikaOS GNOME kinetic
 
 on:
   workflow_dispatch
@@ -25,5 +25,5 @@ jobs:
 
     - uses: actions/upload-artifact@v3
       with:
-        name: PikaOS 22.10
+        name: PikaOS GNOME 22.10
         path: builds/
