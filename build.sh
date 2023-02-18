@@ -3,7 +3,7 @@
 ARCH=amd64
 RELEASE=2210
 DESKTOP=Gnome
-ISO_IMAGE=PikaOS-$DESKTOP-$RELEASE-$ARCH-$(date '+%y.%m.%d')
+ISO_IMAGE=PikaOS-$DESKTOP-$RELEASE-$ARCH_$(date '+%y.%m.%d')
 
 gpg --keyserver keyserver.ubuntu.com --recv-keys 204DD8AEC33A7AFF
 
