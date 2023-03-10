@@ -44,6 +44,7 @@ $(BUILD)/iso_casper.tag: $(BUILD)/live $(BUILD)/chroot.tag $(BUILD)/live.tag $(B
 	sudo chown -R "$(USER):$(USER)" "$(BUILD)/iso/$(CASPER_PATH)"
 
 	ln -sf "$(CASPER_PATH)" "$(BUILD)/iso/casper"
+	ln -sf "$(CASPER_PATH)" "$(BUILD)/iso/casper_pika"
 
 	touch "$@"
 

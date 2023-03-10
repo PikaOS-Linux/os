@@ -34,7 +34,7 @@ fi
 
 # Install PikaOS sources
 apt install wget -y
-wget https://launchpad.net/~pikaos/+archive/ubuntu/baseos/+files/pika-sources_3.0-99pika18_all.deb
+wget https://ppa.pika-os.com/pool/main/p/pika-sources/pika-sources_4.0-99pika3_all.deb
 sudo apt install ./pika-sources*.deb --yes --option Acquire::Retries=5 --option Acquire::http::Timeout=100 --option Dpkg::Options::="--force-confnew"
 rm -rf ./pika-sources*.deb
 apt-get update -y
