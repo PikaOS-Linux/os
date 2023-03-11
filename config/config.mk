@@ -23,6 +23,8 @@ DISTRO_PKGS=\
 	dosfstools \
 	intel-microcode \
 	amd64-microcode \
+	linux-firmware \
+	firmware-sof-signed \
 	iucode-tool \
 	setserial \
 	git \
