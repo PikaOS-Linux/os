@@ -4,7 +4,10 @@ ISO=$(BUILD)/$(ISO_NAME).iso
 TAR=$(BUILD)/$(ISO_NAME).tar
 USB=$(BUILD)/$(ISO_NAME).img
 
-CASPER_PATH=casper_$(ISO_NAME)
+CASPER_PATH=casper
+
+VMLINUZ=vmlinuz-6.2.1-pikaos
+INITRD=initrd.img-6.2.1-pikaos
 
 SED=\
 	s|CASPER_PATH|$(CASPER_PATH)|g; \
