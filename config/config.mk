@@ -61,6 +61,7 @@ MAIN_POOL=\
 	grub-efi-amd64 \
 	grub-efi-amd64-bin \
 	grub-efi-amd64-signed \
+	grub2-common \
 	grub-pc \
 	grub-pc-bin \
 	grub-gfxpayload-lists \
