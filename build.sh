@@ -3,7 +3,7 @@
 ARCH=amd64
 RELEASE=2210
 DESKTOP=Gnome
-ISO_IMAGE=PikaOS-$DESKTOP-$RELEASE-$ARCH_$(date '+%y.%m.%d')
+ISO_IMAGE=PikaOS-$DESKTOP-$RELEASE-$ARCH-$(date '+%y.%m.%d')
 
 gpg --keyserver keyserver.ubuntu.com --recv-keys 204DD8AEC33A7AFF
 
@@ -33,7 +33,7 @@ echo "Building: $ISO_IMAGE".iso
 make
 
 mkdir -p builds/
-mv build/pikaos/22.10/PikaOS_22*.iso builds/"$ISO_IMAGE".iso
+mv build/pikaos/22.10/pikaos_22*.iso builds/"$ISO_IMAGE".iso
 cd builds
 touch "$ISO_IMAGE".md5
 md5sum "$ISO_IMAGE".iso > "$ISO_IMAGE".md5
