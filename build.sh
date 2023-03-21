@@ -33,6 +33,7 @@ echo "Building: $ISO_IMAGE".iso
 make
 
 mkdir -p builds/
-mv build/pikaos/22.10/pikaos_22*.iso builds/"$ISO_IMAGE".iso
-touch builds/"$ISO_IMAGE".md5
-md5sum builds/"$ISO_IMAGE".iso > builds/"$ISO_IMAGE".md5
+mv build/pikaos/22.10/PikaOS_22*.iso builds/"$ISO_IMAGE".iso
+cd builds
+touch "$ISO_IMAGE".md5
+md5sum "$ISO_IMAGE".iso > "$ISO_IMAGE".md5
