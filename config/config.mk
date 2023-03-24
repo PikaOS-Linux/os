@@ -12,7 +12,7 @@ DISTRO_PKGS=\
 	systemd-boot \
 	systemd \
 	zram-config \
-	plymouth-theme-spinner \
+	plymouth-theme-pika-text \
 	pika-baseos \
 	pika-amdgpu-core \
 	pika-amdgpu-switcher \
@@ -29,7 +29,8 @@ DISTRO_PKGS=\
 	setserial \
 	git \
 	wireguard-modules \
-	kernel-pika 
+	kernel-pika \
+	open-vm-tools
 	
 # Packages to install after (to avoid dependency issues)
 POST_DISTRO_PKGS=rsync
