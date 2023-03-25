@@ -13,7 +13,6 @@ DISTRO_PKGS=\
 	systemd \
 	zram-config \
 	plymouth-theme-spinner \
-	plymouth-theme-pika-text \
 	pika-baseos \
 	pika-amdgpu-core \
 	pika-amdgpu-switcher \
