@@ -41,6 +41,7 @@ apt-get update -y
 
 # Actions to do before DISTRO_PKGS
 sudo apt install initramfs-tools adwaita-icon-theme humanity-icon-theme amdgpu-drm --yes --option Acquire::Retries=5
+sudo apt install plymouth-theme-spinner --yes --option Acquire::Retries=5 || sudo apt install plymouth plymouth-label --yes --option Acquire::Retries=5 && sudo apt install plymouth-theme-spinner --yes --option Acquire::Retries=5
 sudo mkdir -p /usr/lib/firmware/
 
 # Update package definitions

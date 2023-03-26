@@ -12,7 +12,6 @@ DISTRO_PKGS=\
 	systemd-boot \
 	systemd \
 	zram-config \
-	plymouth-theme-pika-text \
 	pika-baseos \
 	pika-amdgpu-core \
 	pika-amdgpu-switcher \
@@ -53,7 +52,8 @@ RM_PKGS=\
 	ubuntu-wallpapers \
 	unattended-upgrades \
 	xul-ext-ubufox \
-	yaru-theme-gnome-shell
+	yaru-theme-gnome-shell \
+	tilix
 
 # Packages not installed, but that may need to be discovered by the installer
 MAIN_POOL=\
