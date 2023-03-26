@@ -12,6 +12,7 @@ DISTRO_PKGS=\
 	systemd-boot \
 	systemd \
 	zram-config \
+	fonts-ubuntu \
 	plymouth-theme-spinner \
 	plymouth-theme-pika-text \
 	pika-baseos \
