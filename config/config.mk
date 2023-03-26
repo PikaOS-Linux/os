@@ -12,6 +12,7 @@ DISTRO_PKGS=\
 	systemd-boot \
 	systemd \
 	zram-config \
+	plymouth-theme-spinner \
 	plymouth-theme-pika-text \
 	pika-baseos \
 	pika-amdgpu-core \
