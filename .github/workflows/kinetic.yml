@@ -16,6 +16,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    
+    - name: Install needed packages
+      run: apt update && apt install debootstrap gpg gpg-agent lz4 rsync schedtool wget zstd tar reprepro dpkg-sig -y
 
     - name: Import GPG key
       id: import_gpg
@@ -31,9 +34,6 @@ jobs:
         name: id_rsa
         known_hosts: ${{ secrets.KNOWN_HOSTS }}
         if_key_exists: replace
-
-    - name: Install needed packages
-      run: apt update && apt install debootstrap lz4 rsync schedtool wget zstd tar reprepro dpkg-sig -y
 
     - name: Build ISO
       run: ./build.sh
