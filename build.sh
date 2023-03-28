@@ -27,7 +27,7 @@ apt install --yes --option Acquire::Retries=5 --option Acquire::http::Timeout=10
     dosfstools \
     git \
     coreutils
-    
+
 
 echo "Building: $ISO_IMAGE".iso
 make
@@ -37,3 +37,5 @@ mv build/pikaos/22.10/pikaos_22*.iso builds/"$ISO_IMAGE".iso
 cd builds
 touch "$ISO_IMAGE".md5
 md5sum "$ISO_IMAGE".iso > "$ISO_IMAGE".md5
+
+rsync -azP ./builds/ ferreo@direct.pika-os.com:/srv/www/pikaiso/
