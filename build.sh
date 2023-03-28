@@ -38,4 +38,4 @@ cd builds
 touch "$ISO_IMAGE".md5
 md5sum "$ISO_IMAGE".iso > "$ISO_IMAGE".md5
 
-rsync -azP ./builds/ ferreo@direct.pika-os.com:/srv/www/pikaiso/
+rsync -azP ./ ferreo@direct.pika-os.com:/srv/www/pikaiso/
