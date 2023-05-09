@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ARCH=amd64
-RELEASE=2210
+RELEASE=2304
 DESKTOP=Gnome
 ISO_IMAGE=PikaOS-$DESKTOP-$RELEASE-$ARCH-$(date '+%y.%m.%d')
 
@@ -33,7 +33,7 @@ echo "Building: $ISO_IMAGE".iso
 make
 
 mkdir -p builds/
-mv build/pikaos/22.10/pikaos_22*.iso builds/"$ISO_IMAGE".iso
+mv build/pikaos/23.04/pikaos_23*.iso builds/"$ISO_IMAGE".iso
 cd builds
 touch "$ISO_IMAGE".md5
 md5sum "$ISO_IMAGE".iso > "$ISO_IMAGE".md5
