@@ -1,8 +1,8 @@
 # Configuration settings
 DISTRO_CODE?=pikaos
-DISTRO_VERSION?=22.10
+DISTRO_VERSION?=23.04
 DISTRO_DESKTOP?=GNOME
-UBUNTU_CODE?=kinetic
+UBUNTU_CODE?=lunar
 UBUNTU_MIRROR?=http://archive.ubuntu.com/ubuntu/
 
 DISTRO_EPOCH?=$(shell date +%s)
