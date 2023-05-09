@@ -8,8 +8,6 @@ DISTRO_PKGS=\
 	ubuntu-standard \
 	ubuntu-keyring \
 	pika-sources \
-	update-systemd-boot \
-	systemd-boot \
 	systemd \
 	zram-config \
 	fonts-ubuntu \
@@ -32,7 +30,9 @@ DISTRO_PKGS=\
 	git \
 	wireguard-modules \
 	kernel-pika \
-	open-vm-tools
+	open-vm-tools \
+	f2fs-tools \
+	xfsprogs
 	
 # Packages to install after (to avoid dependency issues)
 POST_DISTRO_PKGS=rsync
@@ -86,6 +86,4 @@ MAIN_POOL=\
 	python3-systemd \
 	vbetool \
 	xbacklight \
-	update-systemd-boot \
-	systemd-boot \
-	systemd
+	refind
