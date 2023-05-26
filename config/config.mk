@@ -87,4 +87,6 @@ MAIN_POOL=\
 	python3-systemd \
 	vbetool \
 	xbacklight \
-	refind
+	refind \
+	mokutil \
+	pika-refind-theme
