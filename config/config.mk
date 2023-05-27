@@ -32,6 +32,7 @@ DISTRO_PKGS=\
 	wireguard-modules \
 	kernel-pika \
 	open-vm-tools \
+	open-vm-tools-desktop \
 	f2fs-tools \
 	xfsprogs
 	
