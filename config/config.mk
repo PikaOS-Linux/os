@@ -34,7 +34,8 @@ DISTRO_PKGS=\
 	open-vm-tools \
 	open-vm-tools-desktop \
 	f2fs-tools \
-	xfsprogs
+	xfsprogs \
+	refind
 	
 # Packages to install after (to avoid dependency issues)
 POST_DISTRO_PKGS=rsync
@@ -58,7 +59,8 @@ RM_PKGS=\
 	unattended-upgrades \
 	xul-ext-ubufox \
 	yaru-theme-gnome-shell \
-	tilix
+	tilix \
+	apport
 
 # Packages not installed, but that may need to be discovered by the installer
 MAIN_POOL=\
