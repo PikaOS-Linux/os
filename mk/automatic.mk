@@ -6,8 +6,8 @@ USB=$(BUILD)/$(ISO_NAME).img
 
 CASPER_PATH=casper
 
-VMLINUZ=vmlinuz-6.3.0-pikaos
-INITRD=initrd.img-6.3.0-pikaos
+VMLINUZ=vmlinuz-6.4.0-pikaos
+INITRD=initrd.img-6.4.0-pikaos
 
 SED=\
 	s|CASPER_PATH|$(CASPER_PATH)|g; \
