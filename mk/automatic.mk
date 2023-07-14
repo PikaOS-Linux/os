@@ -40,5 +40,3 @@ endif
 ifeq (,$(SQUASHFS))
 $(error squashfs-tools not found! Run deps.sh first.)
 endif
-
->>>>>>> cbcd09bf08c42e5e0b2e7b6f383f4846706d7fc6
