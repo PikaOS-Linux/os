@@ -36,4 +36,4 @@ jobs:
         if_key_exists: replace
 
     - name: Build ISO
-      run: ./build.sh
+      run: chmod +x ./build.sh && ./build.sh

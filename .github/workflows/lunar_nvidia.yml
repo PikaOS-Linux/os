@@ -36,4 +36,4 @@ jobs:
         if_key_exists: replace
 
     - name: Build ISO
-      run: ./build_nvidia.sh
+      run: chmod +x ./build_nvidia.sh && ./build_nvidia.sh && 
