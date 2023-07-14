@@ -50,7 +50,7 @@ if echo "${INSTALL}" | grep nvidia-driver
 then
     sudo apt install  nvidia-kernel-common-535  --yes --option Acquire::Retries=5
     sudo apt install  kernel-pika  --yes --option Acquire::Retries=5
-    sudo apt install  nvidia-dkms-535  --yes --option Acquire::Retries=5
+    sudo apt install  nvidia-dkms-535  --yes --option Acquire::Retries=5 || sudo rm /var/lib/dpkg/info/nvidia-dkms-535.postinst -f && sudo dpkg --configure nvidia-dkms-535 && sudo apt-get install -yf
 fi
 
 # Update package definitions
@@ -124,6 +124,9 @@ if [ -n "${CLEAN}" ]
 then
     apt-get clean -y
 fi
+
+ls /usr/src/linux-headers-* -d | sed -e 's/.*linux-headers-//' | \
+    sort -V | tac | sudo xargs -n1 /usr/lib/dkms/dkms_autoinstaller start
 
 # Remove temporary files
 rm -rf /tmp/*
