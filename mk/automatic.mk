@@ -6,8 +6,8 @@ USB=$(BUILD)/$(ISO_NAME).img
 
 CASPER_PATH=casper
 
-VMLINUZ=vmlinuz-6.4.1-pikaos
-INITRD=initrd.img-6.4.1-pikaos
+VMLINUZ=vmlinuz-6.4.0-pikaos
+INITRD=initrd.img-6.4.0-pikaos
 
 SED=\
 	s|CASPER_PATH|$(CASPER_PATH)|g; \
@@ -40,3 +40,5 @@ endif
 ifeq (,$(SQUASHFS))
 $(error squashfs-tools not found! Run deps.sh first.)
 endif
+
+>>>>>>> cbcd09bf08c42e5e0b2e7b6f383f4846706d7fc6
