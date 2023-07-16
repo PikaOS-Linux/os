@@ -43,6 +43,7 @@ POST_DISTRO_PKGS=rsync
 
 DISTRO_PARAMS+=modules_load=nvidia
 DISTRO_PARAMS+=nvidia-drm.modeset=0
+DISTRO_PARAMS+=amd_pstate=active
 
 # Packages to have in live instance
 LIVE_PKGS=\
