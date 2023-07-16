@@ -40,6 +40,8 @@ DISTRO_PKGS=\
 # Packages to install after (to avoid dependency issues)
 POST_DISTRO_PKGS=rsync
 
+DISTRO_PARAMS+=amd_pstate=active
+
 # Packages to have in live instance
 LIVE_PKGS=\
 	casper \
