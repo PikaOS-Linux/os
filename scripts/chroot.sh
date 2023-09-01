@@ -39,7 +39,6 @@ sudo apt install ./pika-sources.deb --yes --option Acquire::Retries=5 --option A
 rm -rf ./pika-sources.deb
 apt-get update -y
 
-
 # Actions to do before DISTRO_PKGS
 sudo apt install initramfs-tools adwaita-icon-theme humanity-icon-theme amdgpu-drm --yes --option Acquire::Retries=5
 sudo apt install update-notifier --yes --option Acquire::Retries=5
@@ -52,12 +51,13 @@ then
     sudo apt install  kernel-pika  --yes --option Acquire::Retries=5
     ls /usr/src
     ls /boot
-    sudo apt install  nvidia-dkms-535  --yes --option Acquire::Retries=5 || ln -sf /boot/config-6.4.0-pikaos /boot/config-6.3.8-arch1-1 && \
-        ln -sf /boot/initrd.img-6.4.0-pikaos /boot/initrd.img-6.3.8-arch1-1 && \
-        ln -sf /usr/src/linux-headers-6.4.0-pikaos /usr/src/linux-headers-6.3.8-arch1-1 && \
-        ln -sf /boot/System.map-6.4.0-pikaos /boot/System.map-6.3.8-arch1-1 && \
-        ln -sf /boot/vmlinuz-6.4.0-pikaos /boot/vmlinuz-6.3.8-arch1-1 && \
-        sudo dpkg --configure nvidia-dkms-535 && sudo apt-get install -yf
+    sudo apt install  nvidia-dkms-535  --yes --option Acquire::Retries=5 || echo "Workaround: Link chroot kernel to host kernel..."
+    ln -sfv /boot/config-6.5.0-pikaos /boot/config-$(uname -r)
+    ln -sfv /boot/initrd.img-6.5.0-pikaos /boot/initrd.img-$(uname -r)
+    ln -sfv /usr/src/linux-headers-6.5.0-pikaos /usr/src/linux-headers-$(uname -r)
+    ln -sfv /boot/System.map-6.5.0-pikaos /boot/System.map-$(uname -r)
+    ln -sfv /boot/vmlinuz-6.5.0-pikaos /boot/vmlinuz-$(uname -r)
+    sudo dpkg --configure nvidia-dkms-535 && sudo apt-get install -yf
 fi
 
 # Update package definitions
