@@ -40,15 +40,17 @@ rm -rf ./pika-sources.deb
 apt-get update -y
 
 # Actions to do before DISTRO_PKGS
+# Actions to do before DISTRO_PKGS
 sudo apt install initramfs-tools adwaita-icon-theme humanity-icon-theme amdgpu-drm --yes --option Acquire::Retries=5
 sudo apt install update-notifier --yes --option Acquire::Retries=5
 sudo apt install update-manager --yes --option Acquire::Retries=5
 sudo apt install ubuntu-release-upgrader-gtk --yes --option Acquire::Retries=5
+sudo apt install kernel-pika  --yes --option Acquire::Retries=5
 sudo apt install booster-placeholder --yes --option Acquire::Retries=5
 sudo mkdir -p /usr/lib/firmware/
 if echo "${INSTALL}" | grep nvidia-driver
 then
-    sudo apt install  kernel-pika  --yes --option Acquire::Retries=5
+    sudo apt install  nvidia-pika-kernel-module-535 --yes --option Acquire::Retries=5
 fi
 
 # Update package definitions
