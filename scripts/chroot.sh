@@ -49,8 +49,8 @@ sudo apt install booster-placeholder --yes --option Acquire::Retries=5
 sudo mkdir -p /usr/lib/firmware/
 if echo "${INSTALL}" | grep nvidia-driver
 then
-    sudo apt install  nvidia-6.5.0-pikaos-module-535 --yes --option Acquire::Retries=5
     sudo apt install  nvidia-kernel-common-535 --yes --option Acquire::Retries=5
+    sudo apt install  nvidia-6.5.0-pikaos-module-535 --yes --option Acquire::Retries=5
     sudo apt install  nvidia-pika-kernel-module-535 --yes --option Acquire::Retries=5
 fi
 
