@@ -94,4 +94,5 @@ MAIN_POOL=\
 	xbacklight \
 	refind \
 	mokutil \
-	pika-refind-theme
+	pika-refind-theme \
+	booster
