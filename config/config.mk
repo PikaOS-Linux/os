@@ -47,7 +47,7 @@ LIVE_PKGS=\
 	casper \
 	expect \
 	gparted \
-	calamares-settings-pika
+	calamares-settings-pika-gnome
 
 # Packages to remove from installed system (usually installed as Recommends)
 RM_PKGS=\
