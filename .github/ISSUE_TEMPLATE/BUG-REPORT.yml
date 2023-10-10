@@ -39,7 +39,7 @@ body:
       description: |
         You can look it up in the Settings app, at the bottom of the About page.
       options:
-        - "23.04"
+        - "3"
         - "Unreleased"
     validations:
       required: true

@@ -3,7 +3,7 @@
 ARCH=amd64
 RELEASE=3
 DESKTOP=Gnome
-ISO_IMAGE=PikaOS-$DESKTOP-$RELEASE-$ARCH-$(date '+%y.%m.%d')
+ISO_IMAGE=PikaOS-nvidia-$DESKTOP-$RELEASE-$ARCH-$(date '+%y.%m.%d')
 
 gpg --keyserver keyserver.ubuntu.com --recv-keys 204DD8AEC33A7AFF
 
@@ -30,7 +30,7 @@ apt install --yes --option Acquire::Retries=5 --option Acquire::http::Timeout=10
 
 
 echo "Building: $ISO_IMAGE".iso
-cp ./Makefiles/standard ./Makefile
+cp ./Makefiles/cosmo ./Makefile
 make
 
 mkdir -p builds/

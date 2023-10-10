@@ -1,6 +1,6 @@
 
 
-name: PikaOS lunar
+name: PikaOS 3
 
 on:
   workflow_dispatch

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ARCH=amd64
-RELEASE=2304
+RELEASE=3
 DESKTOP=Gnome
 ISO_IMAGE=PikaOS-nvidia-$DESKTOP-$RELEASE-$ARCH-$(date '+%y.%m.%d')
 
@@ -34,7 +34,7 @@ cp ./Makefiles/nvidia ./Makefile
 make
 
 mkdir -p builds/
-mv build/pikaos/23.04/pikaos_23*.iso builds/"$ISO_IMAGE".iso  || exit 7
+mv build/pikaos/3/pikaos_3*.iso builds/"$ISO_IMAGE".iso  || exit 7
 cd builds
 touch "$ISO_IMAGE".md5
 md5sum "$ISO_IMAGE".iso > "$ISO_IMAGE".md5

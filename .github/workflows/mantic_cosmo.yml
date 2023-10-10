@@ -1,6 +1,6 @@
 
 
-name: PikaOS lunar (Nvidia)
+name: PikaOS 3 (Cosmo Private build)
 
 on:
   workflow_dispatch
@@ -36,4 +36,4 @@ jobs:
         if_key_exists: replace
 
     - name: Build ISO
-      run: chmod +x ./build_nvidia.sh && ./build_nvidia.sh 
+      run: chmod +x ./build_cosmo.sh && ./build_cosmo.sh 

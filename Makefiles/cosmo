@@ -21,7 +21,7 @@ include mk/automatic.mk
 include mk/language.mk
 
 # Include configuration file
-include config/config.mk
+include config/config_cosmo.mk
 
 # Standard target - build the ISO
 iso: $(ISO)
