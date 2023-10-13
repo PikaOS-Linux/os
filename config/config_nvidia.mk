@@ -29,7 +29,6 @@ DISTRO_PKGS=\
 	iucode-tool \
 	setserial \
 	git \
-	wireguard-modules \
 	kernel-pika \
 	open-vm-tools \
 	open-vm-tools-desktop \
@@ -49,8 +48,7 @@ DISTRO_PARAMS+=amd_pstate=active
 LIVE_PKGS=\
 	casper \
 	expect \
-	gparted \
-	calamares-settings-pika-gnome
+	gparted
 
 # Packages to remove from installed system (usually installed as Recommends)
 RM_PKGS=\
@@ -65,7 +63,8 @@ RM_PKGS=\
 	xul-ext-ubufox \
 	yaru-theme-gnome-shell \
 	tilix \
-	apport
+	apport \
+	rtkit
 
 # Packages not installed, but that may need to be discovered by the installer
 MAIN_POOL=\
