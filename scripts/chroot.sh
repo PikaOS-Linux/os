@@ -56,7 +56,7 @@ then
     ln -sfv /boot/System.map-6.5.5-pikaos /boot/System.map-$(uname -r)
     ln -sfv /boot/vmlinuz-6.5.5-pikaos /boot/vmlinuz-$(uname -r)
     sudo apt install  nvidia-kernel-common-535 --yes --option Acquire::Retries=5
-    sudo apt install  nvidia-6.5.5-pikaos-module-535 --yes --option Acquire::Retries=5
+    sudo apt install  linux-modules-nvidia-535-6.5.5-pikaos --yes --option Acquire::Retries=5
     sudo apt install  nvidia-pika-kernel-module-535 --yes --option Acquire::Retries=5
 fi
 
