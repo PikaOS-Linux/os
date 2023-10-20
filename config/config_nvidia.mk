@@ -48,7 +48,10 @@ DISTRO_PARAMS+=amd_pstate=active
 LIVE_PKGS=\
 	casper \
 	expect \
-	gparted
+	gparted \
+	pikainstall \
+	vanilla-installer \
+	pika-first-setup-user 
 
 # Packages to remove from installed system (usually installed as Recommends)
 RM_PKGS=\
