@@ -8,6 +8,7 @@ CASPER_PATH=casper
 
 VMLINUZ=vmlinuz-6.6.0-pikaos
 INITRD=initrd.img-6.6.0-pikaos
+HOST_KERNEL := $(shell uname -r)
 
 SED=\
 	s|CASPER_PATH|$(CASPER_PATH)|g; \
