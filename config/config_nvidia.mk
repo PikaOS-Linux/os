@@ -35,7 +35,7 @@ DISTRO_PKGS=\
 	f2fs-tools \
 	xfsprogs \
 	refind \
-	nvidia-driver-535
+	nvidia-driver-545
 	
 # Packages to install after (to avoid dependency issues)
 POST_DISTRO_PKGS=rsync
