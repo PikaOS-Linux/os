@@ -50,13 +50,13 @@ sudo mkdir -p /usr/lib/firmware/
 if echo "${INSTALL}" | grep nvidia-driver
 then
     echo "Workaround: Link chroot kernel to host kernel..."
-    ln -sfv /boot/config-6.6.0-pikaos /boot/config-$(uname -r)
-    ln -sfv /boot/initrd.img-6.6.0-pikaos /boot/initrd.img-$(uname -r)
-    ln -sfv /usr/src/linux-headers-6.6.0-pikaos /usr/src/linux-headers-$(uname -r)
-    ln -sfv /boot/System.map-6.6.0-pikaos /boot/System.map-$(uname -r)
-    ln -sfv /boot/vmlinuz-6.6.0-pikaos /boot/vmlinuz-$(uname -r)
+    ln -sfv /boot/config-6.6.6-pikaos /boot/config-$(uname -r)
+    ln -sfv /boot/initrd.img-6.6.6-pikaos /boot/initrd.img-$(uname -r)
+    ln -sfv /usr/src/linux-headers-6.6.6-pikaos /usr/src/linux-headers-$(uname -r)
+    ln -sfv /boot/System.map-6.6.6-pikaos /boot/System.map-$(uname -r)
+    ln -sfv /boot/vmlinuz-6.6.6-pikaos /boot/vmlinuz-$(uname -r)
     sudo apt install  nvidia-kernel-common-545 --yes --option Acquire::Retries=5
-    sudo apt install  linux-modules-nvidia-545-6.6.0-pikaos --yes --option Acquire::Retries=5
+    sudo apt install  linux-modules-nvidia-545-6.6.6-pikaos --yes --option Acquire::Retries=5
     sudo apt install  nvidia-pika-kernel-module-545 --yes --option Acquire::Retries=5
 fi
 
