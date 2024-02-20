@@ -29,6 +29,7 @@ DISTRO_PKGS=\
 	iucode-tool \
 	setserial \
 	git \
+	pika-first-setup-gtk4 \
 	kernel-pika \
 	open-vm-tools \
 	open-vm-tools-desktop \
@@ -47,8 +48,7 @@ LIVE_PKGS=\
 	expect \
 	gparted \
 	pikainstall \
-	vanilla-installer \
-	pika-first-setup-user 
+	pika-installer-gtk4
 
 # Packages to remove from installed system (usually installed as Recommends)
 RM_PKGS=\
