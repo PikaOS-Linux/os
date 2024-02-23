@@ -17,7 +17,6 @@ DISTRO_PKGS=\
 	pika-amdgpu-core \
 	pika-amdgpu-switcher \
 	pika-gnome-desktop-minimal \
-	pika-gnome-first-setup \
 	dbus-x11 \
 	rsync \
 	apt-utils \
