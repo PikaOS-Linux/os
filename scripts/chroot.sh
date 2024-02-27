@@ -41,6 +41,7 @@ apt-get update -y
 
 # Actions to do before DISTRO_PKGS
 sudo apt install initramfs-tools adwaita-icon-theme humanity-icon-theme amdgpu-drm --yes --option Acquire::Retries=5
+sudo apt install desktop-file-utils --yes --option Acquire::Retries=5
 sudo apt install kernel-pika  --yes --option Acquire::Retries=5
 sudo apt install booster-placeholder --yes --option Acquire::Retries=5
 sudo mkdir -p /usr/lib/firmware/
