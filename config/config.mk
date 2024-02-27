@@ -34,6 +34,7 @@ DISTRO_PKGS=\
 	open-vm-tools-desktop \
 	mesa-hybrid \
 	mesa-hybrid:i386 \
+	locales-all \
 	f2fs-tools \
 	xfsprogs \
 	refind
