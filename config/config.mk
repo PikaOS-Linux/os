@@ -32,6 +32,8 @@ DISTRO_PKGS=\
 	kernel-pika \
 	open-vm-tools \
 	open-vm-tools-desktop \
+	mesa-hybrid \
+	mesa-hybrid:i386 \
 	f2fs-tools \
 	xfsprogs \
 	refind
