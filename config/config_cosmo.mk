@@ -35,7 +35,7 @@ DISTRO_PKGS=\
 	f2fs-tools \
 	xfsprogs \
 	refind \
-	nvidia-driver-545
+	nvidia-driver-550
 	
 # Packages to install after (to avoid dependency issues)
 POST_DISTRO_PKGS=rsync pika-gameutils-meta
