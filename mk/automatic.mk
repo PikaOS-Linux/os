@@ -6,8 +6,8 @@ USB=$(BUILD)/$(ISO_NAME).img
 
 CASPER_PATH=casper
 
-VMLINUZ=vmlinuz-6.8.1-pikaos
-INITRD=initrd.img-6.8.1-pikaos
+VMLINUZ=vmlinuz-6.8.3-pikaos
+INITRD=initrd.img-6.8.3-pikaos
 HOST_KERNEL := $(shell uname -r)
 
 SED=\
